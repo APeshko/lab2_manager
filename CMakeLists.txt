@@ -35,7 +35,7 @@ endif()
 # Configure tests
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
-target_link_libraries(lab2_manager-1 ${GTEST_LIBRARIES} pthread)
+target_link_libraries(lab2_manager ${GTEST_LIBRARIES} pthread)
 add_executable(MyLibraryTests
         tests/test_basic.cpp
 )
